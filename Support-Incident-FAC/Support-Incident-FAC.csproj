@@ -1,0 +1,389 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9E4D703-C3E8-4ACC-A98C-AE9B176ECB4E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Support_Incident_FAC</RootNamespace>
+    <AssemblyName>Support-Incident-FAC</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>E:\SupportFAC\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>917467C9D74D1619DCAABE60513B59B685E4D96F</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Support-Incident-FAC_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmDefineLevelAndSMSPhone.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDefineLevelAndSMSPhone.Designer.cs">
+      <DependentUpon>FrmDefineLevelAndSMSPhone.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGiaiThichTuNgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmGiaiThichTuNgu.Designer.cs">
+      <DependentUpon>FrmGiaiThichTuNgu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLevel1Action.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLevel1Action.Designer.cs">
+      <DependentUpon>FrmLevel1Action.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLevel2Action.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLevel2Action.Designer.cs">
+      <DependentUpon>FrmLevel2Action.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLevel2Flow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLevel2Flow.Designer.cs">
+      <DependentUpon>FrmLevel2Flow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLevel3Action.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLevel3Action.Designer.cs">
+      <DependentUpon>FrmLevel3Action.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLevel3Flow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLevel3Flow.Designer.cs">
+      <DependentUpon>FrmLevel3Flow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLuuDienNewFarmVertiUPSChuThich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLuuDienNewFarmVertiUPSChuThich.Designer.cs">
+      <DependentUpon>FrmLuuDienNewFarmVertiUPSChuThich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLuuDienOldFarmMGEUPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLuuDienOldFarmMGEUPS.Designer.cs">
+      <DependentUpon>FrmLuuDienOldFarmMGEUPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLuuDienOldFarmMGEUPSChuThich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLuuDienOldFarmMGEUPSChuThich.Designer.cs">
+      <DependentUpon>FrmLuuDienOldFarmMGEUPSChuThich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLuuDienNewFarmVertiUPS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLuuDienNewFarmVertiUPS.Designer.cs">
+      <DependentUpon>FrmLuuDienNewFarmVertiUPS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMain.Designer.cs">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMayLanhChinhXacNuocGasCrahCrac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMayLanhChinhXacNuocGasCrahCrac.Designer.cs">
+      <DependentUpon>FrmMayLanhChinhXacNuocGasCrahCrac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMayLanhChinhXacNuocGasCrahCracChuThich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMayLanhChinhXacNuocGasCrahCracChuThich.Designer.cs">
+      <DependentUpon>FrmMayLanhChinhXacNuocGasCrahCracChuThich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMayLanhTrungTamChiller.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMayLanhTrungTamChiller.Designer.cs">
+      <DependentUpon>FrmMayLanhTrungTamChiller.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMayLanhTrungTamChillerChuThich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMayLanhTrungTamChillerChuThich.Designer.cs">
+      <DependentUpon>FrmMayLanhTrungTamChillerChuThich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMayPhatDienGenSet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMayPhatDienGenSet.Designer.cs">
+      <DependentUpon>FrmMayPhatDienGenSet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMayPhatDienGenSetChuThich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMayPhatDienGenSetChuThich.Designer.cs">
+      <DependentUpon>FrmMayPhatDienGenSetChuThich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmThongTinLienLac.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmThongTinLienLac.Designer.cs">
+      <DependentUpon>FrmThongTinLienLac.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTramBienApTransformer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTramBienApTransformer.Designer.cs">
+      <DependentUpon>FrmTramBienApTransformer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTramBienApTransformerChuThich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTramBienApTransformerChuThich.Designer.cs">
+      <DependentUpon>FrmTramBienApTransformerChuThich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTuDienPhanPhoiDistributionBoardDB.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTuDienPhanPhoiDistributionBoardDB.Designer.cs">
+      <DependentUpon>FrmTuDienPhanPhoiDistributionBoardDB.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmTuDienPhanPhoiDistributionBoardDBChuThich.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmTuDienPhanPhoiDistributionBoardDBChuThich.Designer.cs">
+      <DependentUpon>FrmTuDienPhanPhoiDistributionBoardDBChuThich.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="FrmLevel1Flow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLevel1Flow.Designer.cs">
+      <DependentUpon>FrmLevel1Flow.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="FrmDefineLevelAndSMSPhone.resx">
+      <DependentUpon>FrmDefineLevelAndSMSPhone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmGiaiThichTuNgu.resx">
+      <DependentUpon>FrmGiaiThichTuNgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLevel1Action.resx">
+      <DependentUpon>FrmLevel1Action.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLevel2Action.resx">
+      <DependentUpon>FrmLevel2Action.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLevel2Flow.resx">
+      <DependentUpon>FrmLevel2Flow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLevel3Action.resx">
+      <DependentUpon>FrmLevel3Action.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLevel3Flow.resx">
+      <DependentUpon>FrmLevel3Flow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLuuDienNewFarmVertiUPS.resx">
+      <DependentUpon>FrmLuuDienNewFarmVertiUPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLuuDienNewFarmVertiUPSChuThich.resx">
+      <DependentUpon>FrmLuuDienNewFarmVertiUPSChuThich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLuuDienOldFarmMGEUPS.resx">
+      <DependentUpon>FrmLuuDienOldFarmMGEUPS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLuuDienOldFarmMGEUPSChuThich.resx">
+      <DependentUpon>FrmLuuDienOldFarmMGEUPSChuThich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMain.resx">
+      <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMayLanhChinhXacNuocGasCrahCrac.resx">
+      <DependentUpon>FrmMayLanhChinhXacNuocGasCrahCrac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMayLanhChinhXacNuocGasCrahCracChuThich.resx">
+      <DependentUpon>FrmMayLanhChinhXacNuocGasCrahCracChuThich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMayLanhTrungTamChiller.resx">
+      <DependentUpon>FrmMayLanhTrungTamChiller.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMayLanhTrungTamChillerChuThich.resx">
+      <DependentUpon>FrmMayLanhTrungTamChillerChuThich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMayPhatDienGenSet.resx">
+      <DependentUpon>FrmMayPhatDienGenSet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMayPhatDienGenSetChuThich.resx">
+      <DependentUpon>FrmMayPhatDienGenSetChuThich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmThongTinLienLac.resx">
+      <DependentUpon>FrmThongTinLienLac.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTramBienApTransformer.resx">
+      <DependentUpon>FrmTramBienApTransformer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTramBienApTransformerChuThich.resx">
+      <DependentUpon>FrmTramBienApTransformerChuThich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTuDienPhanPhoiDistributionBoardDB.resx">
+      <DependentUpon>FrmTuDienPhanPhoiDistributionBoardDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmTuDienPhanPhoiDistributionBoardDBChuThich.resx">
+      <DependentUpon>FrmTuDienPhanPhoiDistributionBoardDBChuThich.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLevel1Flow.resx">
+      <DependentUpon>FrmLevel1Flow.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Support-Incident-FAC_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level1-Action.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level11.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Keyword.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level3.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level3-Action.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level2-Action.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Level2.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DefineLevelAndSMSPhone.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="PhuLuc1-ThietBiFac\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MayPhatDienGensetDescription.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MayPhatDienGenSetChuThich.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MayPhatDienGenSetChuThich1.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MayLanhTrungTamChillerChuThich.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\TuDienPhanPhoiChuThich.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LuuDienChuThich.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FrmMayPhatDienGenSetChuThich.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FrmMayLanhChinhXacNuocGasCrahCracChuThich.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FrmLuuDienNewFarmVertiUPSChuThich.JPG" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
